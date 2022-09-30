@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo</title>
+    <!-- custom css file link-->
+    <link rel="stylesheet" href="style.css">
+    <!--font awesome cdn-->
+    <script src="https://kit.fontawesome.com/e5826b2874.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="preloader"></div>
+
+
+    <!-- Header section starts here-->
+
+    <header>
+
+        <div id="manubar" class="fa-solid fa-bars"></div>
+
+        <a href="#" class="logo"><Span>T</Span>ravel<span>G</span>o</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="about.html">about</a>
+            <a href="package.html">Packages</a>
+            <a href="book.html">book</a>
+
+
+        </nav>
+
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa-solid fa-user" id="login-btn"></i>
+        </div>
+
+        <form class="search-bar-container" id="bar" action="">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+        </form>
+
+    </header>
+    <!-- Header section ends here-->
+
+    <!-- login form container here-->
+    <div class="login-form">
+
+
+        <form action="">
+            <i class="fas fa-times" id="form-close"></i>
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your Email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>Forget password? <a href="password.html">Click Here</a></p>
+            <p>Don't have an account? <a class="register" href="registration.html">Register Now</a></p>
+
+        </form>
+
+    </div>
+
+    <!-- form selection ends here-->
+
+
+    <!-- Home Selection starts here-->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>don't be a tourist, Be a traveller</h3>
+            <p>discover new places with us, adventure awaits</p>
+            <a href="#package" class="btn">Discover more</a>
+        </div>
+        <div class="controls">
+
+            <span class="vid-btn active" data-src="videos/new1.mp4"></span>
+            <span class="vid-btn" data-src="videos/2.mp4"></span>
+            <span class="vid-btn" data-src="videos/8.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="videos/new1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!-- Home Selection ends here-->
+
+    <!-- service section starts here-->
+    <section class="services">
+        <h1 class="heading-tile">our services</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/adventure.png" alt="#">
+                <h3>adventure</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/guide.png" alt="#">
+                <h3>tour guide</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/trekking.png" alt="#">
+                <h3>trekking</h3>
+            </div>
+            <div class="box">
+                <img src="images/campfire.png" alt="#">
+                <h3>camp fire</h3>
+            </div>
+            <div class="box">
+                <img src="images/offroad.png" alt="#">
+                <h3>off road</h3>
+            </div>
+            <div class="box">
+                <img src="images/camp.png" alt="#">
+                <h3>camping</h3>
+            </div>
+        </div>
+    </section>
+    <!-- service section ends here-->
+
+    <!-- home about section starts here-->
+
+    <section class="homeabout">
+        <div class="image">
+            <img src="images/aboutus.png" alt="#">
+        </div>
+        <div class="content">
+            <h3>about us</h3>
+            <p>with our experience we will service you.</p>
+            <div class="order">
+                <p>clients</p>
+                <p class="number count">100</p>
+            </div>
+
+            <div class="order">
+                <p>years of experience</p>
+                <p class="number1 count">5</p>
+            </div>
+
+            <div class="order">
+                <p>completed tours</p>
+                <p class="number2 count">50</p>
+            </div>
+
+
+            <a href="about.html" class="btn"> read more</a>
+        </div>
+
+    </section>
+    <!-- home about section ends here-->
+
+    <!-- home package section starts here-->
+    <section class="homepackage" id="package">
+        <h1 class="heading-tile"> our packages</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/agra.jpg" width="100%" alt="">
+                </div>
+                <div class="content">
+                    <h3>agra - taj mahal</h3>
+                    <p>An ivory-white marble mausoleum on the banks of the River Yamuna, in the city of Agra, stands one
+                        of the seven wonders of the world- Taj Mahal.It is a universally admired masterpiece, showcasing
+                        rich Indian art, of its time.</p>
+                    <p class="price"> 5 Nights<br> <span>&#8377; 17,999/person</span></p>
+                    <a href="#" class="btn btn-reg" id="reg">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/alleppey.jpg" width="100%" alt="">
+                </div>
+                <div class="content">
+                    <h3>alleppey- backwaters of kerala</h3>
+                    <p>Best known for houseboat cruises, Alappuzha (or Alleppey) is a city on the Laccadive Sea in the
+                        southern state of Kerala. The houseboat cruises along the rustic Kerala, a wide network of
+                        interlinking, palm-fringed canals called backwaters and Ayurvedic resorts.</p>
+                    <p class="price"> 5 Nights<br> <span>&#8377; 12,999/person</span></p>
+                    <a href="#" class="btn btn-reg1">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/goa.jpg" width="100%" alt="">
+                </div>
+                <div class="content">
+                    <h3>Goa</h3>
+                    <p>Goa is a western state of India, with long coastlines stretching along the Arabian Sea.ations.
+                        Goa is also known for its beautiful serene and scenic beaches, ranging from popular stretches at
+                        Palolem and Baga, to those in laid-back fishing villages such as Agonda.</p>
+                    <p class="price"> 5 Nights<br> <span>&#8377; 20,999/person</span></p>
+                    <a href="#" class="btn btn-reg2">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/andaman.jpg" width="100%" alt="">
+                </div>
+                <div class="content">
+                    <h3>andaman and nicobar islands</h3>
+                    <p>Turquoise blue waters, shimmering beaches and a bit of history; Andaman and Nicobar Islands is a
+                        paradise located 1,400 km.Havelock Island has some of the most beautiful beaches in the world.
+                        It’s known for its beaches with coral reefs and dive sites.</p>
+                    <p> 5 Nights <br> <span>&#8377; 24,999/person</span></p>
+                    <a href="#" class="btn btn-reg3">book now</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="loadmore"><a href="#" class="btn btn-reg4">load more</a></div>
+    </section>
+    <!-- home package section ends here-->
+
+
+    <!-- home offer section strats here-->
+
+    <section class="homeoffer" id="book">
+        <div class="content">
+            <h3>upto 50% off</h3>
+            <p>Now fulfill your travel dreams with flat 50% off on your first booking with us.<br>
+                Happy Traveling.., </p>
+            <a href="#" class="btn book-reg">book now</a>
+        </div>
+    </section>
+    <!-- home offer section ends here-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--footer section starts here-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"><i class="fa-solid fa-angle-right"></i>home</a>
+                <a href="#"><i class="fas fa-angle-right"></i>about</a>
+                <a href="#"><i class="fas fa-angle-right"></i>packages</a>
+                <a href="#"><i class="fas fa-angle-right"></i>book</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i>ask a questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i>about us</a>
+                <a href="#"><i class="fas fa-angle-right"></i>privacy plocy</a>
+                <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fa-solid fa-phone"></i>+91 9952838623</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+91 9952838624</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>travelgo@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-map"></i>coimbatore, india - 641602</a>
+            </div>
+
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fa-brands fa-facebook"></i>facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+            </div>
+        </div>
+        <div class="credit">created by <span>Dd</span>/ all rights reserved</div>
+    </section>
+
+
+    <!-- this iframes are used to delay the preloading time-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jWRMXiHhDjc" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <!-- custom js file-->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

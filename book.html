@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo</title>
+    <!-- custom css file link-->
+    <link rel="stylesheet" href="style.css">
+    <!--font awesome cdn-->
+    <script src="https://kit.fontawesome.com/e5826b2874.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header section starts here-->
+
+    <header>
+
+        <div id="manubar" class="fa-solid fa-bars"></div>
+
+        <a href="#" class="logo"><Span>T</Span>ravel<span>G</span>o</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">about</a>
+            <a href="package.html">Packages</a>
+            <a href="book.html">book</a>
+
+        </nav>
+
+    </header>
+    <!-- Header section ends here-->
+
+    <!-- login form container here-->
+    <div class="login-form">
+
+
+        <form action="">
+            <i class="fas fa-times" id="form-close"></i>
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your Email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>Forget password? <a href="#">Click Here</a></p>
+            <p>Don't have an account? <a href="#">Register Now</a></p>
+
+        </form>
+
+    </div>
+
+    <!--login form selection ends here-->
+
+    <!-- form selection ends here-->
+
+    <div class="heading">
+        <div class="clouds">
+
+            <img src="im/Copy of cloud2.png" style="--i:2;">
+            <img src="im/Copy of cloud3.png" style="--i:2;">
+
+        </div>
+
+    </div>
+
+    <!-- book selection statss here-->
+
+    <section class="booking">
+        <h1 class="heading-tile">book your trip!</h1>
+
+
+        <form action="" method="post" class="bookform">
+
+            <div class="flex">
+                <div class="inputbox">
+                    <span>name :</span><input type="text" placeholder="enter your name" name="name" required>
+                </div>
+                <div class="inputbox">
+                    <span>login-Email:</span><input type="email" placeholder="enter your mail-id" name="email" required>
+                </div>
+                <div class="inputbox">
+                    <span>mobile number :</span><input type="number" placeholder="enter your mobile number"
+                        name="mob-num" required>
+                </div>
+                <div class="inputbox">
+                    <span>address :</span><input type="text" placeholder="enter your address" name="address" required>
+                </div>
+                <div class="inputbox">
+                    <span>select package :</span>
+                    <select name="place" required="required" id="place" onchange="calculate()">
+                        <option value="select">--Select--</option>
+                        <option value="Agra">Agra</option>
+                        <option value="Alleppey">Alleppey</option>
+                        <option value="Andaman">Andaman</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Manali">Manali</option>
+                        <option value="Mehalaya">Mehalaya</option>
+                        <option value="Mysore">Mysore</option>
+                        <option value="Ooty">Ooty</option>
+                        <option value="Pondicherry">Pondicherry</option>
+                        <option value="Shimla">Shimla</option>
+                        <option value="Srinagar">Srinagar</option>
+                        <option value="Varanasi">Varanasi</option>
+                        <option value="Udaipur">Udaipur</option>
+                        <option value="Spiti">Spiti</option>
+                    </select>
+                    <input type="text" id="amount"  readonly>
+                </div>
+                <div class="inputbox">
+                    <span>how many :</span><input type="text" id="guest" oninput="calculate()" placeholder="number of guests" name="no_visiters" required>
+
+                </div>
+                <div class="inputbox">
+                    <span>arrivals :</span>
+                    <input type="date" name="arrivals" min="2022-08-23" required>
+                </div>
+                <div class="inputbox">
+                    <span>leaving :</span>
+                    <input type="date" name="leaving" min="2022-08-23" required>
+                </div>
+            </div>
+
+            <input type="submit" value="submit" class="btn" name="submit">
+            <p><font color="silver">cancallation not available!</font></p>
+        </form>
+
+    </section>
+    <!-- book selection ends here-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--footer section starts here-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"><i class="fa-solid fa-angle-right"></i>home</a>
+                <a href="#"><i class="fas fa-angle-right"></i>about</a>
+                <a href="#"><i class="fas fa-angle-right"></i>packages</a>
+                <a href="#"><i class="fas fa-angle-right"></i>book</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i>ask a questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i>about us</a>
+                <a href="#"><i class="fas fa-angle-right"></i>privacy plocy</a>
+                <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"><i class="fa-solid fa-phone"></i>+91 9952838623</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+91 9952838624</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>travelgo@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-map"></i>coimbatore, india - 641602</a>
+            </div>
+
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fa-brands fa-facebook"></i>facebook</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+            </div>
+        </div>
+        <div class="credit">created by <span>Dd</span>/ all rights reserved</div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+      const package = { Srinagar : 12999, Varanasi : 14999, Manali :17999, Shimla : 15999, agra : 17999, Spiti : 13999, Sikkim : 14999,Ooty : 9999,Mysore : 9999,  Goa : 20999, Alleppey : 12999, Pondicherry : 9999, Andaman : 24999, Spiti : 13999, Udaipur : 12999};
+      function calculate(){
+        var val = document.getElementById('guest').value;
+        var place = document.getElementById('place').value;
+        for(let x in package){
+          if (x == place){
+            var multiply = val * package[x];
+            let currency = Intl.NumberFormat('en-IN');
+            document.getElementById('amount').value = currency.format(multiply);
+          }
+        }
+      }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel=stylesheet href="style.css">
+</head>
+
+<body>
+    <!-- Registration form container here-->
+    <div class="registration-form">
+
+
+        <form action="" method="post">
+            <i class="fas fa-times" id="form-close"></i>
+            <h3>Sign UP</h3>
+            <input type="name" class="box" placeholder="Enter your Name" required>
+            <input type="email" class="box" placeholder="Enter your Email" required>
+            <input type="text" class="box" placeholder="Enter your mobile number" maxlength="10" required>
+            <input type="number" class="box" min="18" max="70" placeholder="Your age" required>
+            <div class="gen">
+                <label name="gender">Gender</label>
+                <input type="radio" class="item" name="gender" value="female" required>Female
+                <input type="radio" class="item" name="gender" value="male">Male
+            </div>
+            <input type="password" class="box" placeholder="Enter your password" required>
+            <input type="text" class="box" maxlength="200" placeholder="Address here" required>
+            <input type="submit" value="sign in" class="btn">
+
+        </form>
+
+    </div>
+
+    <!--Registration form selection ends here-->
+</body>
+
+</html>
